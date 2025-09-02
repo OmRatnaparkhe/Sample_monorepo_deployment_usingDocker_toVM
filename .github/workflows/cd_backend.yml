@@ -21,4 +21,4 @@ jobs:
           context: .
           file : ./docker/Dockerfile.backend
           push : true
-          tags : OmRatnaparkhe/todo-app-backend:${{github.sha}}      
+          tags : omratnaparkhe/todo-app-backend:${{github.sha}}      
