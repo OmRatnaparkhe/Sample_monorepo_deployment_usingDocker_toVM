@@ -15,5 +15,9 @@
   },
   "exports":{
     "./client":"./index.ts"
-  }
+  },
+  "scripts": {
+  "generate": "bunx prisma generate --schema=./prisma/schema.prisma"
+}
+
 }

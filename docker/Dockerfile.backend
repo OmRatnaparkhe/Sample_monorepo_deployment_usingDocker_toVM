@@ -14,7 +14,10 @@ COPY ./apps/backend ./apps/backend
 RUN apt-get update -y && apt-get install -y openssl
 
 RUN bun install
-RUN bun run db:generate
+WORKDIR /app/packages/db
+RUN bunx prisma generate --schema=./prisma/schema.prisma
+
+
 
 EXPOSE 8080
 
