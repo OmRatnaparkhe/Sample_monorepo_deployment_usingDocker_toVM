@@ -21,4 +21,4 @@ RUN bunx prisma generate --schema=./prisma/schema.prisma
 
 EXPOSE 8080
 
-CMD ["bun","run","start:backend"]
+CMD ["bun","run","start"]
